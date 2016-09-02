@@ -1,0 +1,17 @@
+.secondary {
+	.widget {
+		margin-bottom: 50px;
+	}
+
+	.widget.null-instagram-feed {
+		ul {
+			overflow: hidden;
+
+			li {
+				width: calc(100%/3);
+				height: auto;
+				float: left;
+			}
+		}
+	}
+}

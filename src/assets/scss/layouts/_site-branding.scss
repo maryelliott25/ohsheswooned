@@ -1,0 +1,18 @@
+.site-branding {
+	h1.image-title {
+		display: block;
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	p {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	@media (max-width: 600px) {
+		margin-bottom: 25px;
+	}
+}

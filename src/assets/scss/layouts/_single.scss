@@ -1,0 +1,35 @@
+.single-post {
+	.full-width-header-image + .article-body {
+		max-width: 1000px;
+	}
+	
+	.article-body {
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+	}
+
+	.header-image {
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+	}
+
+	.entry-header {
+		margin: 50px 0;
+	}
+	
+	.entry-meta {
+		margin-top: 5px;
+	}
+
+	.entry-content p {
+		margin-bottom: 1em;
+	}
+
+	.entry-content{
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+	}
+}

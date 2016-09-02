@@ -1,0 +1,15 @@
+.pagination {
+	text-align: center;
+
+	.page-numbers {
+		padding: 0 10px;
+
+		&.prev {
+			margin-right: 25px;
+		}
+
+		&.next {
+			margin-left: 25px;
+		}
+	}
+}

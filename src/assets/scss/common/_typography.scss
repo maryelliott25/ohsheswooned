@@ -1,0 +1,295 @@
+.font-awesome {
+	font-family: FontAwesome;
+}
+
+@mixin font-family ($family, $weight: normal, $style: normal) {
+	@if ($family=='crimson') {
+		font-family: 'crimson', Georgia, serif;
+	} @else if ($family=='lato') {
+		font-family: 'lato', Helvetica, Arial, sans-serif;
+	} @else {
+		font-family: $family;
+	}
+	font-weight: $weight;
+	font-style: $style
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	color: $primary-text;
+}
+
+// Site Branding
+.site-description {
+	@include font-family('crimson');
+	font-size: 10px;
+	color: $primary-text;
+    text-transform: uppercase;
+    letter-spacing: $lrg-tracking;
+}
+
+// Main Navigation
+.main-navigation .menu-item {
+	@include font-family('crimson', bold);
+    font-size: 12px;
+    color: $primary-text;
+    text-transform: uppercase;
+    letter-spacing: $lrg-tracking;
+}
+
+.mobile-main-navigation li a {
+	@include font-family('lato');
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $primary-text;
+    vertical-align: middle;
+}
+
+//Featured Slider
+.slide-copy {
+	color: $primary-text;
+}
+
+.slide-category {
+	@include font-family('crimson', bold);
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	letter-spacing: $lrg-tracking;
+	color: $primary-text;
+	text-shadow: 0px 0px 20px white;
+}
+
+.slide-title {
+	@include font-family('lato');
+	font-size: 18px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: $sm-tracking;
+	color: $primary-text;
+	text-shadow: 0px 0px 20px white;
+
+	@media (max-width: 450px) {
+		font-size: 16px;
+	}
+}
+
+//Post - Loop Only
+.entry-category-title {
+	@include font-family('lato', bold);
+    font-size: 12px;
+    letter-spacing: $sm-tracking;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+//Post - Loop & Single
+.entry-title {
+	@include font-family('crimson', bold);
+	text-transform: uppercase;
+	line-height: 1.25;
+	letter-spacing: $sm-tracking;
+
+	.in-loop & {
+		font-size: 24px;
+	}
+
+	.after-first & {
+		text-align: left;
+		font-size: 24px;
+
+		@media (max-width: 1250px) {
+			font-size: 22px;
+		}
+
+		@media (max-width: 650px) {
+			font-size: 20px;
+		}
+
+		@media (max-width: 450px) {
+			text-align: center;
+		}
+	}
+}
+
+.entry-meta {
+	@include font-family('crimson', normal, italic);
+    font-size: 13px;
+    text-align: center;
+
+    .after-first & {
+    	text-align: left;
+
+    	@media (max-width: 450px) {
+    		text-align: center;
+    	}
+    }
+}
+
+.entry-content p {
+	@include font-family('lato');
+	font-size: 16px;
+	line-height: 1.9;
+}
+
+.page-numbers {
+	@include font-family('lato');
+	font-size: 14px;
+
+	&.current {
+		text-decoration: underline;
+	}
+}
+
+.entry-tags a {
+	@include font-family('crimson');
+	font-size: 12px;
+}
+
+//Post - Single
+.pn-posts {
+	.pn-meta {
+		@include font-family('lato');
+		font-size: 12px;
+	}
+
+	.pn-title {
+		@include font-family('crimson', bold);
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+}
+
+//Post - Recipe
+.recipe-instructions {
+	h2 {
+		@include font-family('crimson', bold);
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: $lrg-tracking;
+	}
+
+	li, p {
+		@include font-family('lato');
+		font-size: 16px;
+		line-height: 1.9;
+	}
+} 
+
+.ingredient-line {
+	@include font-family('crimson');
+	font-size: 14px;
+
+	.ingredient-qty {
+		font-weight: bold;
+	}
+}
+
+//Category Loop
+.category .page-title, .search .page-title, .tag .page-title {
+	@include font-family('lato', normal);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+//Widgets
+.widget p {
+	@include font-family('crimson', normal, italic);
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: center;
+	color: $primary-text;
+}
+
+.widget-title {
+	@include font-family('crimson', bold);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primary-text;
+    letter-spacing: $lrg-tracking;
+    margin-bottom: 14px;
+}
+
+.widget li a {
+	@include font-family('lato');
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $primary-text;
+    vertical-align: middle;
+}
+
+//Comments
+.comments-area {
+	h3.entry-title {
+		@include font-family('crimson', bold);
+		font-size: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: $sm-tracking;
+	}
+
+	h3.comment-reply-title {
+		@include font-family('crimson', bold);
+		font-size: 1.125em;
+		text-transform: uppercase;
+		letter-spacing: $sm-tracking;
+	}
+
+	input, textarea {
+		@include font-family('crimson', normal);
+		font-size: 0.875em;
+
+		&.submit {
+			@include font-family('lato', bold);
+			text-transform: uppercase;
+			font-size: 0.75em;
+		}
+	}
+
+	.comment-author {
+		@include font-family('lato', normal);
+		font-size: 1em;
+		margin-bottom: 1em;
+
+		.comment-author-link {
+			text-transform: uppercase;
+			font-weight: light;
+			font-size: 1.125em;
+			letter-spacing: $sm-tracking;
+		}
+		
+		.comment-author-phrase {
+			font-size: 0.875em;
+		}
+	}
+
+	.comment-content {
+		@include font-family('crimson', normal);
+		font-size: 1em;
+
+		p {
+			margin-bottom: 2em;
+		}
+	}
+
+	.comment-meta-item, .comment-reply-link {
+		@include font-family('lato', bold);
+		font-size: 0.75em;
+	}
+
+	.comment-meta-item {
+		text-transform: capitalize;
+	}
+
+	.comment-reply-link {
+		text-transform: uppercase;
+		letter-spacing: $sm-tracking;
+		margin-left: 50px;
+
+		@media (max-width: 400px) {
+			display: block;
+			margin-left: 0;
+    		margin-top: 5px;
+		}
+	}
+}

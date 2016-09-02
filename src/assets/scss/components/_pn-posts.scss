@@ -1,0 +1,138 @@
+.pn-posts {
+  clear: both;
+  max-width: 1000px;
+  padding: 50px 0 25px;
+  margin: 50px auto 0;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.pn-post {
+  display: inline-block;
+  width: 50%;
+  max-width: 430px;
+  font-size: 16px;
+  vertical-align: top;
+
+  .meta-wrapper {
+    margin-bottom: 15px;
+  }
+
+  &.next-post {
+    text-align: right;
+    padding-left: 5px;
+    float: right;
+
+    .pn-image {
+      float: right;
+      margin-left: 15px;
+    }
+
+    .pn-title {
+      padding-right: 165px;
+      padding-left: 15px;
+
+      @media (max-width: 950px) {
+        padding: 15px 10px 10px;
+        position: static;
+      }
+    }
+
+    .pn-info {
+      position: absolute;
+      right: 165px;
+      bottom: 12px;
+    }
+  }
+
+  &.previous-post {
+    padding-right: 5px;
+
+    .pn-image {
+      float: left;
+      margin-right: 15px;
+    }
+
+    .pn-title {
+      padding-left: 165px;
+      padding-right: 15px;
+
+      @media (max-width: 950px) {
+        padding: 15px 10px 10px;
+        position: static;
+      }
+    }
+
+    .pn-info {
+      position: absolute;
+      left: 165px;
+      bottom: 12px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .pn-content {
+      font-size: 0.8em;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .pn-info {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .hr-title {
+      padding: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.pn-content {
+  position: relative;
+  background: $primary-bg;
+
+  &:after {
+    clear: both;
+    content: ' ';
+    visibility: hidden;
+  	display: block;
+  	font-size: 0;
+  	clear: both;
+  	height: 0;
+  }
+
+  .pn-title {
+  	padding-top: 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: 950px) {
+    text-align: center;
+    background-color: #FFFFFF;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+.pn-meta {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 15px;
+  background: white;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0 auto;
+}

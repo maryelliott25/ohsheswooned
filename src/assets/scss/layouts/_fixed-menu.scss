@@ -1,0 +1,34 @@
+.fixed-nav-wrapper {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+
+	width: 100%;
+	overflow: hidden;
+
+	background-color: $primary-bg;
+
+	.menu {
+		padding: 0 9px;
+		text-align: right;
+	}
+
+	.menu-item {
+		min-width: 32px;
+		text-align: center;
+	}
+
+	form[role="search"] {
+		input[type="search"] {
+			padding: 3px 0;
+			width: 0;
+			transition: width 300ms;
+		}
+
+		&:hover {
+			input[type="search"] {
+				width: 168px;
+			}
+		}
+	}
+}

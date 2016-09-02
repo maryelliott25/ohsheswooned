@@ -1,0 +1,33 @@
+.content-area-wrapper {
+	width: 100%;
+	max-width: 1150px;
+	margin: 100px auto 0;
+	overflow: hidden;
+
+	.primary {
+		width: calc(100% - 400px);
+		float: left;
+	}
+
+	.secondary {
+		width: 300px;
+		float: right;
+	}
+
+	@media (max-width: 1050px) {
+		.primary {
+			width: 100%;
+			float: none;
+		}
+
+		.secondary {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 1050px) {
+	.secondary {
+		display: none;
+	}
+}

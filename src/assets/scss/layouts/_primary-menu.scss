@@ -1,0 +1,28 @@
+.main-navigation {
+	margin-bottom: 10px;
+	padding: 50px 0 0;
+
+	.menu {
+		text-align: center;
+	}
+
+	.menu-item {
+		padding-right: 20px;
+
+		&:after {
+			display: inline;
+			content: '\00B7';
+			margin-left: 20px; 
+		}
+
+		&:last-of-type {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	@media (max-width: 600px) {
+		display: none;
+	}
+}

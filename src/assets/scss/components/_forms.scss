@@ -1,0 +1,25 @@
+// All Forms
+
+form {
+	input {
+		&:focus {
+			outline: none;
+		}
+	}
+
+	input[type="search"],
+	input[type="text"] {
+		font-family: 'lato', sans-serif;
+		font-weight: normal;
+		font-style: normal;
+		color: inherit;
+	}
+}
+
+// Search Form
+
+.search-form {
+	input[type="submit"] {
+	    font-family: FontAwesome;
+	}
+}

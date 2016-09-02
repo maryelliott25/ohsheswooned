@@ -1,0 +1,91 @@
+@import '../../../node_modules/font-awesome/scss/font-awesome';
+
+@font-face {
+    font-family: 'crimson';
+    src: url('./assets/fonts/crimsontext-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/crimsontext-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'crimson';
+    src: url('./assets/fonts/crimsontext-bolditalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/crimsontext-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'crimson';
+    src: url('./assets/fonts/crimsontext-italic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/crimsontext-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'crimson';
+    src: url('./assets/fonts/crimsontext-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/crimsontext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/fonts/lato-semibold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/lato-semibold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/fonts/lato-semibolditalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/lato-semibolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/fonts/lato-light-webfont.woff2') format('woff2'),
+         url('./assets/fonts/lato-light-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/fonts/lato-lightitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/lato-lightitalic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/fonts/lato-hairline-webfont.woff2') format('woff2'),
+         url('./assets/fonts/lato-hairline-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/fonts/lato-hairlineitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/lato-hairlineitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+
+}

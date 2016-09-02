@@ -1,0 +1,41 @@
+.widget.widget_pinterest-pinboard-widget {
+	#pinterest-pinboard-widget-container {
+		.pinboard {
+			margin: 0;
+		}
+
+		.row {
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+		}
+
+		a {
+			display: block;
+			position: relative;
+			width: calc(100%/3);
+			float: left;
+			overflow: hidden;
+
+			&:before {
+				display: block;
+				content: '';
+				padding-top: 100%;
+			}
+		}
+
+		img {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			padding: 0;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+
+		.pin_link {
+			display: none;
+		}
+	}
+}

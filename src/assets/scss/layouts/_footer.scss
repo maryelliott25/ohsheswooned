@@ -1,0 +1,35 @@
+.site-footer {
+	width: calc(100% + 100px);
+	position: relative;
+	left: -50px;
+	margin-top: 50px;
+	padding-top: 100px;
+	background-color: $primary-bg;
+
+	.widget:first-of-type {
+		margin-bottom: 100px;
+	}
+
+	.widget.null-instagram-feed {
+		margin-bottom: 0;
+		
+		ul {
+			width: 100%;
+			display: table;
+			table-layout: fixed;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				display: table-cell;
+			}
+		}
+	}
+
+	@media (max-width: 650px) {
+		width: calc(100% + 50px);
+		left: -25px;
+	}
+}
